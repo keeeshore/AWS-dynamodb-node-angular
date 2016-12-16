@@ -1,4 +1,4 @@
-# MEAN STACK App sample.
+# AWS sample.
 Sample app using dynamoDB in AWS, and experimenting with AWS.
 
 #Installing and running.
