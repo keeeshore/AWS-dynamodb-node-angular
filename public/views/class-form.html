@@ -6,7 +6,7 @@
         <label class="col-sm-2 control-label">Select a school</label>
         <div class="col-sm-10">
             <select class="form-control" ng-model="class.schoolId" ng-change="controller.getClasses(class.schoolId)">
-                <option ng-repeat="school in schools" value="{{school._id}}">{{school.name}}</option>
+                <option ng-repeat="school in schools" value="{{school.uuid}}">{{school.sname}}</option>
             </select>
         </div>
     </div>

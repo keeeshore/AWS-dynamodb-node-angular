@@ -10,8 +10,8 @@
                 </tr>
                 <tr ng-repeat="school in schools track by $index">
                     <td>{{$index + 1}}</td>
-                    <td>{{school.name}}</td>
-                    <td>{{school.type}}</td>
+                    <td>{{school.sname}} : {{school.shead}}</td>
+                    <td>{{school.stype}}</td>
                     <td>
                         <input type="button" class="btn btn-xs  btn-danger" value="Delete" ng-click="controller.deleteSchool(school)">
                         <input type="button" class="btn btn-xs btn-warning" value="Edit" ng-click="controller.onEditSchool(school)">
@@ -30,24 +30,24 @@
         <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Name</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" ng-model="school.name">
+                <input type="text" class="form-control" id="name" ng-model="school.sname">
             </div>
         </div>
         <div class="form-group">
             <label for="head" class="col-sm-2 control-label">Head</label>
             <div class="col-sm-10">
-                <input type="head" class="form-control" id="head" ng-model="school.head">
+                <input type="head" class="form-control" id="head" ng-model="school.shead">
             </div>
         </div>
         <div class="form-group">
             <label class="col-sm-2 control-label">Type</label>
             <div class="col-sm-10">
-                <select class="form-control" ng-model="school.type">
-                    <option value="1">Kinder garden</option>
-                    <option value="2">Lower Primary</option>
-                    <option value="3">Upper Primary</option>
-                    <option value="4">Secondary</option>
-                    <option value="5">ALL</option>
+                <select class="form-control" ng-model="school.stype">
+                    <option value="1">[1] Kinder garden</option>
+                    <option value="2">[2] Lower Primary</option>
+                    <option value="3">[3] Upper Primary</option>
+                    <option value="4">[4] Secondary</option>
+                    <option value="5">[5] ALL</option>
                 </select>
             </div>
         </div>

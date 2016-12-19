@@ -14,7 +14,6 @@ controllers.controller('schoolController', ['$route','$scope', '$location',  '$h
     return {
 
         'submitSchool': function (obj) {
-            debugger;
             console.log('submit school called');
             //$scope.schools.push($scope.school);
             //TODO: validations;
@@ -63,7 +62,6 @@ controllers.controller('schoolController', ['$route','$scope', '$location',  '$h
 
         'getSchools': function () {
             $http.get(API.SCHOOL_GET_URL).then(function (response, err) {
-                debugger;
                 console.log('GET school response ::' + response.data);
                 $scope.schools = response.data.schools;
             });
