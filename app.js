@@ -11,17 +11,18 @@ app.use(bodyParser.json()); // for parsing application/json
 var AWS = require('aws-sdk');
 
 /*-LIVE----------*/
-/*AWS.config.update({
+AWS.config.update({
  region: "us-west-2",
  accessKeyId: "AKIAJOSD36P33T3TV27Q",
  secretAccessKey: "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"
- });*/
+ });
 
-/*-LOCAL----------*/
+/*-LOCAL----------
 AWS.config.update({
     region: "us-west-2",
     endpoint: "http://localhost:8000/"
 });
+*/
 
 // Create an S3 client
 var s3 = new AWS.S3();
